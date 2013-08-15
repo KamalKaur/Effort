@@ -1,0 +1,16 @@
+pell Checking in Python
+
+I was looking into spell checking in Python.  I found spell4py, and downloaded the zip, but couldn’t get it to build on my system.  If I tried a bit longer maybe, but in the end my solution worked out fine.  This library was overkill for my needs too.
+
+I found this article here: http://code.activestate.com/recipes/117221/
+
+This seemed to work well for my purposes, but I wanted to test out other spell checking libraries.    Mozilla Firefox , Google Chrome, and OpenOffice all use hunspell, so I wanted to try that one (as I’m testing the spelling of words on the Internet).  Here are some python snippets to get you up and running with the popular spelling checkers. I modified these to take more than 1 word, split them up, and then return a list of suggestions.  They do require each spelling checker to be installed.  I was able to do this through the openSuSE package manager.  spelling
+
+jasvir
+kamaljeet
+bhagwant
+hardip
+hardeep
+Nadarjot Singh
+Infrastructure
+recieved
