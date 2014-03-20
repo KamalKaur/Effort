@@ -1,9 +1,14 @@
-<html>
+
+{% extends 'base.html' %}
+{% block title %}Welcome to my blog{% endblock %}
+
+{% block content %}
+<body style="width:50%"> <html>
 <body>
 {% if form.errors %}
 Please correct it
 {% endif %}
-<form action="/blog/form/done/" method= "post">
+<form action="" method= "post">
 {% csrf_token %}
 <table>
 {{ form.as_table }}
@@ -12,3 +17,4 @@ Please correct it
 </form>
 </body>
 </html>
+{% endblock %}

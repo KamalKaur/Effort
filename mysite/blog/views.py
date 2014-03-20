@@ -9,7 +9,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 def index(request):
     return render_to_response('blog/index.html', {
         'categories': Category.objects.all(),
-        'posts': Blog.objects.all()[:5]
+        'posts': Blog.objects.all()[:10]
     })
 
 def view_post(request): 
@@ -30,7 +30,7 @@ def form(request):
         form = BlogForm(request.POST)
         if form.is_valid():
                 p=form.save()
-                return HttpResponseRedirect('')
+                return HttpResponseRedirect('done')
     else:
         form=BlogForm()
     return render_to_response('blog/blog_form.html',{'form':form},context_instance=RequestContext(request))
